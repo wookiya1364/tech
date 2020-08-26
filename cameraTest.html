@@ -129,7 +129,31 @@
         };
     };
 
+/*
+var express = require('express');
+var router = express.Router();
+var cron = require('node-cron');
+var fs = require('fs');
 
+cron.schedule('*/4 * * * * *', () => {
+	console.log('running 4second');
+
+	fs.unlink('C:/Users/NICEDNB/Downloads/foo.jpg', function(err) {
+		// if (err) throw err;
+		if (err) {
+			console.log('ERR => ' + err);
+		}
+		console.log('file deleted');
+	});
+});
+/* GET home page. */
+router.get('/', function(req, res, next) {
+	res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+
+*/
 </script>
 <body onload="onInit()">
     <p>This example shows you the contents of the selected part of your display.
